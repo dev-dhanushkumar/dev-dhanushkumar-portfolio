@@ -11,7 +11,7 @@ export default defineConfig({
   site: 'https://devolio.devaradise.com',
   integrations: [mdx(), sitemap(), tailwind(), partytown()],
   markdown: {
-    extendDefaultPlugins: true,
+    extendDefaultPlugins: false,
     rehypePlugins: [[autoNewTabExternalLinks, {
       domain: 'localhost:4321'
     }]]
