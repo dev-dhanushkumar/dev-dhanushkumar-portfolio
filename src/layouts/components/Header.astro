@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import AvaLogo from '@src/assets/img/dev-dhanushkumar-small.jpg';
 import GithubWhite from '@src/assets/img/github-mark-white.svg';
 import GithubBlack from '@src/assets/img/github-mark.svg';
-
+import linkedin from '@src/assets/img/linkedin.svg';
 
 const menu = [
   {
@@ -48,6 +48,15 @@ const menu = [
 				<a class='p-3 hidden dark:block' href='https://github.com/dev-dhanushkumar' target='_blank'
 					><Image src={GithubWhite} width={24} height={24} alt='Github logo' /></a
 				>
+
+				<a class='p-3 dark:hidden ' href='https://www.linkedin.com/in/dev-dhanushkumar/' target='_blank'
+					><Image src={linkedin} width={26} height={26} alt='Linked logo' /></a
+				>
+				<a class='p-3 hidden dark:block' href='https://www.linkedin.com/in/dev-dhanushkumar/' target='_blank'
+					><Image src={linkedin} width={26} height={26} alt='LinkedIn logo' /></a
+				>
+
+
 				<button class='p-3' id='themeToggle' aria-label='Theme mode'>
 					<svg
 						class='sun'
