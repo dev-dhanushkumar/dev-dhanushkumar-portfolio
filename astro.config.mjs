@@ -8,12 +8,13 @@ import partytown from "@astrojs/partytown";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://devolio.devaradise.com',
+  site: 'https://dev-dhanushkumar.me',
   integrations: [mdx(), sitemap(), tailwind(), partytown()],
   markdown: {
     extendDefaultPlugins: false,
     rehypePlugins: [[autoNewTabExternalLinks, {
       domain: 'localhost:4321'
     }]]
-  }
+  },
+  base: '/dev-dhanushkumar.github.io'
 });
